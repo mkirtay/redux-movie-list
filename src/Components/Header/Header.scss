@@ -1,0 +1,41 @@
+.header {
+  padding: 20px 0 66px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #bbbbbb;
+
+  [class*="header-"] {
+    width: calc(100% / 3);
+  }
+
+  &-left, &-middle, &-right {
+    float: left;
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+
+    .button--accordion {
+      position: relative;
+      margin-right: 60px;
+      min-width: 80px;
+
+      &:hover {
+        > .submenu {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &-middle {
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

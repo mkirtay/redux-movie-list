@@ -1,0 +1,30 @@
+.modal {
+  $self : &;
+
+  &-delete-movie {
+    #{ $self }-content {
+      padding: 30px;
+
+      #{ $self }-body {
+        span {
+          display: block;
+          font-size: 30px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+
+      #{ $self }-footer {
+        justify-content: center;
+        border: none;
+      }
+    }
+
+    .svg-inline--fa {
+      font-size: 50px;
+      color: #cd1c04;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+}
